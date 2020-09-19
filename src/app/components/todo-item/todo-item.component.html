@@ -1,0 +1,11 @@
+<div [ngClass]="setClasses()" [@fallOverState]="stateName" (@fallOverState.Done)="handleDelete($event, todo)">
+    <p>
+        <!-- <span> -->
+            <input (change)="toggle(todo)" type="checkbox">
+            {{ todo.title }}
+        <!-- </span> -->
+        <button (click)="delete(todo)" class="delete">
+            <fa-icon [icon]="['fas', 'trash']"></fa-icon>
+        </button>
+    </p>
+</div>

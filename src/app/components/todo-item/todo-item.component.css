@@ -1,0 +1,35 @@
+.delete {
+    background: #f6659f;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    margin-left: auto;
+    transition: all 1s ease;
+}
+
+.delete:hover {
+    color: rgb(247, 45, 45);
+    background: wheat;
+}
+
+.todo {
+    padding: 0.8rem;
+    border-bottom: 1px solid silver;
+    min-width: 30%;
+}
+
+p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.is-completed {
+    text-decoration: line-through;
+}
+
+input[type=checkbox] {
+   margin: 5px;
+}
